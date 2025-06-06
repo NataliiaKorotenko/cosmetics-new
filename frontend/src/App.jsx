@@ -4,6 +4,7 @@ import Login from './pages/Login';
 import Home from './pages/Home';
 import PrivateRoute from './components/PrivateRoute';
 import Catalog from './pages/Catalog'; 
+import '../src/App.css';
 
 function App() {
   return (
@@ -14,8 +15,6 @@ function App() {
 
         {/* Страница каталога */}
         <Route path="/catalog" element={<Catalog />} />
-
-        {/* Страница логина */}
         <Route path="/login" element={<Login />} />
 
         {/* Админская панель - приватный маршрут */}

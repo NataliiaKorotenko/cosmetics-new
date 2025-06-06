@@ -1,14 +1,17 @@
 {
   "name": "cosmetics-story",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "backend/server.js",
   "scripts": {
     "install-all": "npm-run-all --parallel install-backend install-frontend",
     "install-backend": "cd backend && npm install",
     "install-frontend": "cd frontend && npm install",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "server": "cd backend && npm start",
-    "client": "cd frontend && npm start"
+    "client": "cd frontend && npm start",
+    "start": "node backend/server.js",
+    "build": "cd frontend && npm install && npm run build"
+
   },
   "keywords": [],
   "author": "",
@@ -21,6 +24,9 @@
     "vite": "^6.3.5"
   },
   "dependencies": {
+    "all": "^0.0.0",
+    "express": "^5.1.0",
+    "lucide-react": "^0.513.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   }

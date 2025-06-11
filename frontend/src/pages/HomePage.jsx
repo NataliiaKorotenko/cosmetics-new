@@ -34,7 +34,7 @@ const HomePage = () => {
       </video>
 
       {/* Затемнение + Контент */}
-      <div className="relative z-10 flex items-center justify-center w-full h-full px-4 bg-black bg-opacity-20">
+      <div className="relative z-10 flex items-center justify-center w-full h-full px-4 bg-black bg-opacity-10">
         <div className="text-center max-w-2xl text-white">
           <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-4">
             Cosmétiques purs pour une peau éclatante
